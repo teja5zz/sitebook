@@ -128,3 +128,27 @@ Thank you for your payment.
 -- SiteWise
 
 Option to send via PDF or WhatsApp/email
+
+Firebase Details
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyC21OiEepDOcDrUkqoowEEEkaKE2UCXpLY",
+  authDomain: "sitebook-4e7de.firebaseapp.com",
+  projectId: "sitebook-4e7de",
+  storageBucket: "sitebook-4e7de.firebasestorage.app",
+  messagingSenderId: "244998211066",
+  appId: "1:244998211066:web:5dd6ea452223c04e3a1043",
+  measurementId: "G-SR4PDXNL7E"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
