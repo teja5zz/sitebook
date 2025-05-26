@@ -1,70 +1,130 @@
-# Getting Started with Create React App
+🏗️ SiteWise – Construction Tracking App
+1. Project Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+    View a list of all active/inactive projects.
 
-## Available Scripts
+    Search and filter projects by name, location, or client.
 
-In the project directory, you can run:
+2. Project Details Tab
 
-### `npm start`
+Each project has its own detail screen with:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    Project Name
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    Client Name
 
-### `npm test`
+    Client Phone Number
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    Site Address
 
-### `npm run build`
+    Project Start & End Dates
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    Status (Ongoing, Completed, On Hold, etc.)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Invoices Tab
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    Generate invoices with:
 
-### `npm run eject`
+        Auto-generated invoice number
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+        Date
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+        Client name and project
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+        Line items (description, quantity, rate, amount)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+        Tax calculations (if any)
 
-## Learn More
+    Edit/Delete invoices
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    Mark invoice as Paid or Pending
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    Export to PDF/Share directly
 
-### Code Splitting
+    Create Acknowledgement Receipt upon payment:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+        Client name
 
-### Analyzing the Bundle Size
+        Amount received
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+        Date
 
-### Making a Progressive Web App
+        Payment mode
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+        Signature/Seal area (optional)
 
-### Advanced Configuration
+4. Expenses Tab
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+    Subsections:
 
-### Deployment
+        Worker Payments
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+            Name of worker
 
-### `npm run build` fails to minify
+            Work type (e.g., mason, laborer)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+            Amount
+
+            Date
+
+        Materials Procured
+
+            Material name
+
+            Vendor name
+
+            Quantity
+
+            Cost
+
+            Invoice/photo upload
+
+        Materials Indent
+
+            Requested by (person)
+
+            Items listed
+
+            Date required
+
+            Status (Pending/Procured)
+
+        Miscellaneous Payments
+
+            Description
+
+            Amount
+
+            Date
+
+5. Site Personnel Tab
+
+    List of key personnel with roles and phone numbers:
+
+        Electrician
+
+        Plumber
+
+        Site Engineer
+
+        Architect (optional)
+
+    Call or WhatsApp directly from app
+
+6. Client Acknowledgement Receipt (Auto-Generated)
+
+    On receiving payment, generate:
+
+Acknowledgement Receipt
+
+Received from: [Client Name]
+Project: [Project Name]
+Amount: ₹[Amount]
+Payment Mode: [Cash/Bank Transfer/UPI]
+Date: [Date]
+
+Thank you for your payment.
+
+-- SiteWise
+
+Option to send via PDF or WhatsApp/email
