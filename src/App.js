@@ -3,6 +3,7 @@ import { initializeApp } from 'firebase/app';
 import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged, setPersistence, browserLocalPersistence } from 'firebase/auth';
 import { getFirestore, doc, addDoc, setDoc, getDoc, updateDoc, deleteDoc, onSnapshot, collection, query, where, serverTimestamp, Timestamp, getDocs, arrayUnion } from 'firebase/firestore';
 import { Plus, X, Edit3, Trash2, Briefcase, FileText, Users, DollarSign, ShoppingCart, ClipboardList, MessageSquare, Home, ExternalLink, Building, TrendingUp, TrendingDown, MinusCircle, Archive, Printer, ListOrdered, Sparkles, Search, Settings, Info, Construction, Coins, Percent, Hash, Mail, MessageCircle as WhatsAppIcon, CheckCircle } from 'lucide-react';
+import { getAnalytics } from 'firebase/analytics';
 // Import the functions you need from the SDKs you need
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -15,8 +16,8 @@ const firebaseConfig ={
     projectId: "sitebook-4e7de",
     storageBucket: "sitebook-4e7de.firebasestorage.app",
     messagingSenderId: "244998211066",
-    appId: "1:244998211066:web:5dd6ea452223c04e3a1043"
-    measurementId: "G-SR4PDXNL7E"
+    appId: "1:244998211066:web:5dd6ea452223c04e3a1043",
+    measurementId: "G-SR4PDXNL7E",
 };
 
 const appId = typeof __app_id !== 'undefined' ? __app_id : 'site-book-default';
