@@ -4,21 +4,12 @@ import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged, 
 import { getFirestore, doc, addDoc, setDoc, getDoc, updateDoc, deleteDoc, onSnapshot, collection, query, where, serverTimestamp, Timestamp, getDocs, arrayUnion } from 'firebase/firestore';
 import { Plus, X, Edit3, Trash2, Briefcase, FileText, Users, DollarSign, ShoppingCart, ClipboardList, MessageSquare, Home, ExternalLink, Building, TrendingUp, TrendingDown, MinusCircle, Archive, Printer, ListOrdered, Sparkles, Search, Settings, Info, Construction, Coins, Percent, Hash, Mail, MessageCircle as WhatsAppIcon, CheckCircle } from 'lucide-react';
 // Import the functions you need from the SDKs you need
-
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-
 // TODO: Add SDKs for Firebase products that you want to use
-
 // https://firebase.google.com/docs/web/setup#available-libraries
-
-
 // Your web app's Firebase configuration
-
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-
 // --- Firebase Configuration ---
-const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : {
+const firebaseConfig ={
     apiKey: "AIzaSyC21OiEepDOcDrUkqoowEEEkaKE2UCXpLY",
     authDomain: "sitebook-4e7de.firebaseapp.com",
     projectId: "sitebook-4e7de",
