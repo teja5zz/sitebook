@@ -129,26 +129,14 @@ Thank you for your payment.
 
 Option to send via PDF or WhatsApp/email
 
-Firebase Details
+Further Potential Enhancements (Beyond this initial version):
 
-// Import the functions you need from the SDKs you need
-import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
-const firebaseConfig = {
-  apiKey: "AIzaSyC21OiEepDOcDrUkqoowEEEkaKE2UCXpLY",
-  authDomain: "sitebook-4e7de.firebaseapp.com",
-  projectId: "sitebook-4e7de",
-  storageBucket: "sitebook-4e7de.firebasestorage.app",
-  messagingSenderId: "244998211066",
-  appId: "1:244998211066:web:5dd6ea452223c04e3a1043",
-  measurementId: "G-SR4PDXNL7E"
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+    Advanced Invoice Generation: PDF export for invoices.
+    Reporting: Summaries of expenses, income, etc.
+    User Roles & Permissions: If multiple users need to access the system.
+    Notifications: For overdue invoices or other important events.
+    File Attachments: For invoices, expense receipts, etc.
+    Full-text Search: For projects, invoices, etc.
+    More Detailed Material Indent Workflow: Tracking indent status changes more explicitly.
+    Error Handling and UI Feedback: More granular error messages and loading states.
+    Automated Deletion of Subcollections: When a project is deleted, its associated invoices, expenses, and contacts should also be deleted (this requires more complex Firestore logic).
